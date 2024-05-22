@@ -1,0 +1,42 @@
+display_name: Cool Names App
+package_name: cool-names-app
+Description: Cool Names App by Anurag Rana
+#version: 1.0.1
+maintainer:
+  name: Anurag Rana
+  email: anuragrana31189@gmail.com
+
+priority: optional
+
+section: x11
+
+installed_size: 15700
+
+dependencies:
+
+essential: false
+
+icon: linux/assets/bear.png
+
+postuninstall_scripts:
+  - echo "Sorry to see you go."
+
+keywords:
+  - Fun
+
+generic_name: Fun App
+
+categories:
+  - Game
+  - Utility
+
+startup_notify: true
+
+
+desktop_entry:
+  name: Cool Naming App
+  comment: Description of My Naming App
+  exec: cool-naming-app %U
+  icon: linux/assets/bear.png
+  type: Application
+  categories: Utility;
